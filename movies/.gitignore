@@ -36,13 +36,7 @@ desktop.ini
 *.swp
 *.swo
 
-# --- Data (large, regeneratable) ---
-data/raw/
-data/splits/
-# data/processed/ is kept — it takes 90 min of Spark to regenerate
 
-# --- Models ---
-models/saved/
 
 # --- Database (optional — comment out to ship a populated DB) ---
 # database/movies.db
@@ -59,3 +53,7 @@ logs/
 build/
 dist/
 *.pdf
+
+data/raw/archive/
+data/raw/archive.zip
+data/splits/
