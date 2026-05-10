@@ -1,0 +1,61 @@
+# --- Secrets ---
+.env
+.env.local
+.env.*.local
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+
+# --- Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.local
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDEs ---
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- Data (large, regeneratable) ---
+data/raw/
+data/splits/
+# data/processed/ is kept — it takes 90 min of Spark to regenerate
+
+# --- Models ---
+models/saved/
+
+# --- Database (optional — comment out to ship a populated DB) ---
+# database/movies.db
+database/movies.db-journal
+database/movies.db-wal
+database/movies.db-shm
+
+# --- Logs / scratch ---
+logs/
+.scratch/
+*.tmp
+
+# --- Build outputs ---
+build/
+dist/
+*.pdf
